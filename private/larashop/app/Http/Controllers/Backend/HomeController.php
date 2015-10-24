@@ -14,6 +14,6 @@ use App\Http\Controllers\Controller;
 class HomeController extends Controller
 {
     public function index() {
-        return "I am backend Controller";
+        return View::make('Backend/app');
     }
 }
