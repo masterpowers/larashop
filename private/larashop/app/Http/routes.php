@@ -15,3 +15,10 @@ Route::get('/test', function () {
     return view('welcome');
 });
 Route::get('/admin', 'Backend\HomeController@index');
+
+Route::resource('/admin/category', 'Backend\CategoriesController');
+Route::resource('/admin/product', 'Backend\ProductsController');
+Route::resource('/admin/order', 'Backend\OrdersController');
+Route::resource('/admin/customer', 'Backend\CustomersController');
+Route::resource('/admin/settings', 'Backend\SettingsController');
+
